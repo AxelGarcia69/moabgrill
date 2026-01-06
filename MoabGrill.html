@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="moabgrill.ico">
+
+    <title>Moab Grill</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>
+            <img src="LogoMG.jpg" alt="Logo" width="85">
+        </h1>
+
+        <nav>
+            <a href="menu.html">BROWSE MENU</a>
+            <a href="#location">LOCATION</a>
+            <a href="Contact.html">CONTACT US</a>
+        </nav>
+    </header>
+ 
+<section class="hero">
+    <div class="slider-wrapper">
+
+        <button class="arrow left" onclick="prevSlide()">&#10094;</button>
+
+        <div class="slider" id="slider">
+            <img src="IMG/slide1.JPEG" alt="Welcome">
+            <img src="IMG/slide2.JPEG" alt="News">
+            <img src="IMG/slide3.JPEG" alt="News2">
+        </div>
+
+        <button class="arrow right" onclick="nextSlide()">&#10095;</button>
+
+    </div>
+
+    <div class="hero-text text-box">
+        <h2>Welcome to Moab Grill</h2>
+        <p>
+            Experience the Moab Grill through dishes crafted with warmth, flavor, and tradition. From sunrise breakfasts to hearty dinners, every plate is made to feel like home.
+        </p>
+    </div>
+
+</section>
+
+<script>
+let slider = document.getElementById('slider');
+let current = 0;
+
+function nextSlide() {
+    current = Math.min(current + 1, slider.children.length - 1);
+    slider.scrollTo({ left: slider.clientWidth * current, behavior: "smooth" });
+}
+
+function prevSlide() {
+    current = Math.max(current - 1, 0);
+    slider.scrollTo({ left: slider.clientWidth * current, behavior: "smooth" });
+}
+</script>
+    
+    <!-- VIDEO SECTION -->
+    <section class="home-video">
+        <div class="video-container">
+
+            <video id="moabVideo" controls autoplay muted>
+                <source src="IMG/MoabVideo.MOV" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+            <button id="replayBtn" class="replay-btn" style="display:none;">
+                Replay Video
+            </button>
+
+        </div>
+
+        <h2 class="video-slogan">Taste the spirit of Moab in every bite.</h2>
+    </section>
+<!-- SECCIÓN INTERMEDIA: IMAGEN + TEXTO -->
+<section class="info-section">
+
+    <div class="info-text text-box">
+        <h2>Explore Our Menu</h2>
+        <p>
+Our menu blends refined taste with timeless comfort, inviting you to savor dishes that celebrate both heritage and hospitality. Discover a dining experience where every detail is designed to make your visit unforgettable.
+        </p>
+
+        <a href="menu.html" class="menu-btn">BROWSE MENU</a>
+    </div>
+
+    <div class="info-image">
+        <img src="IMG/menuHome.png" alt="Info Moab">
+    </div>
+
+</section>
+
+<div class="map-container">
+<section class="location-card" id="location">
+    <h2 class="location-title">📍 Our Location</h2>
+
+    <p class="location-text">
+        Visit us at the heart of Moab, Enjoy great food and warm service.
+    </p>
+
+    <div class="map-container">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3119.619940650488!2d-109.55331732407231!3d38.56556946621529!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8747e1f3d8382903%3A0x69e4f09eb631715b!2s540%20S%20Main%20St%2C%20Moab%2C%20UT%2084532%2C%20EE.%20UU.!5e0!3m2!1ses-419!2smx!4v1763267041675!5m2!1ses-419!2smx"
+            loading="lazy"
+            allowfullscreen=""
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+            <p class="location-text">
+540 S Main St, Moab, UT 84532
+    </p>
+</section>
+</div>
+    
+<footer class="footer" id="contacto">
+  <div class="footer-container">
+
+    <div class="footer-brand">
+      <img src="LogoMG.jpg" alt="Moab Grill Logo" class="footer-logo-img">
+    </div>
+
+    <div class="footer-links">
+      <a href="MoabGrill.html">HOME</a>
+    </div>
+
+    <div class="footer-socials">
+      <a href="https://www.facebook.com/profile.php?id=61584618687221" target="_blank" class="social-item">
+        <img src="IMG/facebook.jpg" alt="Facebook">
+        <span>Facebook</span>
+      </a>
+
+      <a href="https://www.instagram.com/moabgrill_restaurant/" target="_blank" class="social-item">
+        <img src="IMG/instagram.jpg" alt="Instagram">
+        <span>Instagram</span>
+      </a>
+    </div>
+
+    <div class="footer-copy">
+      © 2025 Moab Grill — All rights reserved.
+    </div>
+
+  </div>
+</footer>
+
+
+</body>
+</html>
