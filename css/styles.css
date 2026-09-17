@@ -47,7 +47,7 @@
    -------------------------------------------------------------------------- */
 *, *::before, *::after{ box-sizing:border-box; margin:0; padding:0; }
 
-html{ scroll-behavior:smooth; }
+html{ scroll-behavior:smooth; background:var(--bg); }
 #contact{ scroll-margin-top:calc(var(--header-h) + 8px); } /* ancla del nav "Contact" (index) */
 
 body{
@@ -55,15 +55,31 @@ body{
   font-size:16.5px;
   line-height:1.65;
   color:var(--cream);
-  background-color:var(--bg);
-  background-image:
-    linear-gradient(rgba(16,13,11,.6), rgba(16,13,11,.74)),
-    url('../IMG/background-1.jpg');
-  background-size:cover;
-  background-position:center;
-  background-attachment:fixed;
+  background:transparent; /* el fondo vive en body::before */
   -webkit-font-smoothing:antialiased;
   overflow-x:hidden;
+}
+
+/* Fondo fijo del sitio (parrilla con fuego). Es un pseudo-elemento position:fixed y NO
+   background-attachment:fixed porque iOS no lo soporta: estiraba la foto a lo alto de toda la
+   página y en iPhone se veía borrosa y lavada. Así se dibuja al tamaño de la pantalla, nítida. */
+body::before{
+  content:"";
+  position:fixed;
+  inset:0;
+  z-index:-10;
+  background:
+    linear-gradient(rgba(16,13,11,.6), rgba(16,13,11,.74)),
+    url('../IMG/background-1.jpg') center / cover no-repeat;
+  pointer-events:none;
+}
+@media (max-width:700px){
+  /* recorte vertical (1190×1920, centrado en el fuego): menos peso y mejor encuadre en celular */
+  body::before{
+    background-image:
+      linear-gradient(rgba(16,13,11,.6), rgba(16,13,11,.74)),
+      url('../IMG/background-1-mobile.jpg');
+  }
 }
 
 img{ max-width:100%; display:block; }
@@ -708,6 +724,7 @@ body.nav-open .nav-toggle span::after{ transform:translateY(-8px) rotate(-45deg)
    -------------------------------------------------------------------------- */
 .page-hero{
   position:relative;
+  isolation:isolate;
   min-height:clamp(300px, 44vh, 430px);
   display:grid;
   place-items:center;
