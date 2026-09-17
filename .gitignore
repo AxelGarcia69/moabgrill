@@ -1,0 +1,26 @@
+# Sistema operativo
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Editores
+.vscode/
+.idea/
+*.code-workspace
+
+# Temporales / logs
+*.tmp
+*.log
+*.bak
+~$*
+
+# Claude Code (ajustes locales de la máquina)
+.claude/settings.local.json
+
+# Respaldos y material sin usar (viven fuera del sitio, en ../_archivo)
+_archivo/
+_original_backup/
+_unused/
+
+# Notas internas de trabajo (no van al repo)
+CLAUDE.md
