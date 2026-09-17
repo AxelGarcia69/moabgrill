@@ -1479,6 +1479,10 @@ html.js .reveal.d3{ transition-delay:.24s; }
   .featured-grid{ grid-template-columns:1fr; gap:36px; }
   .featured-svg{ max-width:min(520px, 100%); }
   .featured-desc p{ max-width:none; }
+  /* el mosaico vive dentro del item activo (lo mueve script.js): ocupa todo el ancho debajo del texto */
+  .featured-item{ flex-wrap:wrap; scroll-margin-top:calc(var(--header-h) + 14px); }
+  .featured-item > .featured-visual{ flex:0 0 100%; margin-top:2px; }
+  .featured-desc{ transition-duration:.3s; }
 }
 @media (max-width:1000px){
   /* apilado como el About Us: texto arriba, video abajo (debe ir DESPUÉS de la regla base) */

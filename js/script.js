@@ -383,19 +383,39 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    function activate(index) {
-      if (index === active) return;
-      active = index;
-      items.forEach((el, i) => el.classList.toggle("active", i === index));
-      createLoop(index);
+    /* Móvil/tablet (≤1000px): el mosaico se mete DENTRO del item activo, debajo de su texto,
+       para que título + descripción + foto se vean juntos sin bajar al final de la lista.
+       En escritorio vuelve a su columna (sticky). */
+    const visual = featured.querySelector(".featured-visual");
+    const grid = featured.querySelector(".featured-grid");
+    const mqStack = window.matchMedia("(max-width: 1000px)");
+    function placeVisual() {
+      const target = mqStack.matches ? items[active] : grid;
+      if (visual.parentNode !== target) target.appendChild(visual);
+    }
+    if (mqStack.addEventListener) mqStack.addEventListener("change", placeVisual);
+    else if (mqStack.addListener) mqStack.addListener(placeVisual);
+
+    function activate(index, fromTap) {
+      if (index !== active) {
+        active = index;
+        items.forEach((el, i) => el.classList.toggle("active", i === index));
+        placeVisual();
+        createLoop(index);
+      }
+      // al tocar en móvil, alinear el título del item bajo el header (lo de arriba se pliega)
+      if (fromTap && mqStack.matches) {
+        setTimeout(() => items[index].scrollIntoView({ behavior: reducedMotion ? "auto" : "smooth", block: "start" }), 340);
+      }
     }
 
     items.forEach((el, i) => {
-      el.addEventListener("mouseenter", () => activate(i));
-      el.addEventListener("click", () => activate(i));
-      el.addEventListener("focus", () => activate(i));
+      el.addEventListener("mouseenter", () => activate(i, false));
+      el.addEventListener("click", () => activate(i, true));
+      el.addEventListener("focus", () => activate(i, false));
     });
 
+    placeVisual();
     createLoop(0);
   }
 
@@ -575,6 +595,12 @@ document.addEventListener("DOMContentLoaded", () => {
     const playBtn = reel.querySelector(".reel-play");
     const bar = reel.querySelector(".reel-progress span");
 
+    let inView = false;
+    // iOS solo permite autoplay si el video está realmente silenciado: fijarlo por JS, no solo
+    // con el atributo (WebKit a veces ignora el atributo muted del HTML)
+    video.muted = true;
+    video.defaultMuted = true;
+
     const setSound = (on) => {
       video.muted = !on;
       soundBtn.setAttribute("aria-pressed", on ? "true" : "false");
@@ -605,13 +631,21 @@ document.addEventListener("DOMContentLoaded", () => {
     });
     video.addEventListener("playing", () => reel.classList.add("is-playing"));
     video.addEventListener("timeupdate", () => {
+      if (video.currentTime > 0.1) reel.classList.add("is-playing"); // por si Safari no dispara "playing"
       if (video.duration) bar.style.width = (video.currentTime / video.duration) * 100 + "%";
     });
+
+    /* iPhone en "Modo de bajo consumo" bloquea el autoplay aunque esté silenciado: el primer
+       toque o clic en la página cuenta como gesto del usuario y desbloquea la reproducción */
+    const unlock = () => { if (inView && video.paused && !reducedMotion) tryPlay(); };
+    document.addEventListener("touchend", unlock, { passive: true });
+    document.addEventListener("click", unlock);
 
     /* fuera de pantalla se pausa (batería y datos en celular); al volver, sigue */
     if ("IntersectionObserver" in window) {
       new IntersectionObserver((entries) => {
         entries.forEach((en) => {
+          inView = en.isIntersecting;
           if (!en.isIntersecting) { video.pause(); return; }
           // en pantalla: reproducir (con reduced-motion solo si el usuario ya le dio play antes)
           if (!reducedMotion || reel.classList.contains("is-playing")) tryPlay();
