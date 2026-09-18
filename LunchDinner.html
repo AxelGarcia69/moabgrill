@@ -1,479 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>LUNCH & DINNER</title>
-<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lunch & Dinner Menu — Moab Grill</title>
+    <meta name="description" content="Moab Grill lunch and dinner menu: appetizers, burgers, salads, sandwiches, pizzas, pastas and seafood.">
+    <link rel="canonical" href="https://www.moabgrill.com/LunchDinner.html">
+    <meta name="theme-color" content="#141110">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Moab Grill">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:url" content="https://www.moabgrill.com/LunchDinner.html">
+    <meta property="og:title" content="Lunch & Dinner Menu — Moab Grill">
+    <meta property="og:description" content="Moab Grill lunch and dinner menu: appetizers, burgers, salads, sandwiches, pizzas, pastas and seafood.">
+    <meta property="og:image" content="https://www.moabgrill.com/IMG/og-cover.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Moab Grill restaurant on Main Street, Moab, Utah">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Lunch & Dinner Menu — Moab Grill">
+    <meta name="twitter:description" content="Moab Grill lunch and dinner menu: appetizers, burgers, salads, sandwiches, pizzas, pastas and seafood.">
+    <meta name="twitter:image" content="https://www.moabgrill.com/IMG/og-cover.jpg">
+    <link rel="icon" href="IMG/moabgrill.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="IMG/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="IMG/favicon-192.png">
+    <link rel="apple-touch-icon" href="IMG/apple-touch-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://images.unsplash.com">
+    <link rel="stylesheet" href="css/styles.css">
+    <script>document.documentElement.classList.add('js');</script>
+    <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script defer src="js/script.js"></script>
+    <script type="module" src="js/pdf-viewer.js"></script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.moabgrill.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Menus",
+      "item": "https://www.moabgrill.com/menu.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Lunch & Dinner",
+      "item": "https://www.moabgrill.com/LunchDinner.html"
+    }
+  ]
+}
+    </script>
 </head>
-<body>
 
-<header>
-    <h1>
-        <img src="LogoMG.jpg" alt="Logo" width="85">
-    </h1>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="menu.html">Browse Menu</a>
-        <a href="Contact.html">Contact Us</a>
-    </nav>
+<body class="page">
+
+    <header class="site-header">
+        <div class="header-inner">
+            <a href="index.html" class="brand" aria-label="Moab Grill — Home">
+                <img src="IMG/logo1-cream.png" alt="Moab Grill logo">
+                <span class="brand-name">Moab Grill<small>Moab · Utah</small></span>
+            </a>
+
+            <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false"><span></span></button>
+
+            <nav class="site-nav" aria-label="Main navigation">
+                <a href="index.html"><svg class="nav-ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg><span>Home</span></a>
+                <a href="index.html#contact"><svg class="nav-ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg><span>Contact</span></a>
+                <a href="menu.html" class="btn btn-solid nav-cta">Browse Menu</a>
+            </nav>
+        </div>
     </header>
-<div class="submenu">
 
-    <a href="Breakfast.html" class="submenu-item">
-        <img src="IMG\Breakfast.jpg" alt="All">
-        <span>Breakfast</span>
+    <!-- ================= PAGE HERO ================= -->
+    <section class="page-hero">
+        <div class="page-hero-bg" style="background-image:url('IMG/Lunch-1.jpg')" aria-hidden="true"></div>
+        <div class="page-hero-content">
+            <span class="hero-eyebrow">Grill classics</span>
+            <h1>Lunch & Dinner</h1>
+            <p>Burgers, salads, sandwiches, pizzas, pastas and plates from the grill.</p>
+        </div>
+    </section>
+
+    <!-- ================= CATEGORY PILLS ================= -->
+    <nav class="cat-pills" aria-label="Menu categories">
+        <div class="cat-pills-inner">
+            <a href="Breakfast.html">Breakfast</a>
+            <a href="LunchDinner.html" class="active" aria-current="page">Lunch &amp; Dinner</a>
+            <a href="Desserts.html">Desserts</a>
+            <a href="Beverages.html">Beverages</a>
+        </div>
+    </nav>
+
+    <!-- ================= PDF MENU ================= -->
+    <main class="pdf-wrap container">
+        <div class="pdf-toolbar reveal">
+            <a href="menu.html" class="btn btn-outline" data-back>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+                Back to menus
+            </a>
+            <div class="pdf-toolbar-actions">
+                <a href="documents/Menu_LunchDinner.pdf?v=20260917" target="_blank" rel="noopener" class="btn btn-ghost">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                    Open PDF
+                </a>
+                <a href="documents/Menu_LunchDinner.pdf?v=20260917" download="Moab Grill - Lunch & Dinner Menu.pdf" class="btn btn-light">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                    Download
+                </a>
+            </div>
+        </div>
+
+        <div class="pdf-stage" data-pdf="documents/Menu_LunchDinner.pdf?v=20260917" aria-label="Lunch &amp; Dinner menu">
+            <p class="pdf-status" role="status" aria-live="polite">Loading menu…</p>
+        </div>
+    </main>
+
+    <a href="menu.html" class="pdf-back-fab" data-back>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+        Back to menus
     </a>
 
-    <a href="LunchDinner.html" class="submenu-item">
-        <img src="IMG\Lunch.jpg" alt="Breakfast">
-        <span>Lunch</span>
-    </a>
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <img src="IMG/logo1-cream.png" alt="Moab Grill logo">
+                <p>Hearty breakfasts, grill classics and warm western hospitality in the heart of Moab, Utah.</p>
+            </div>
 
-    <a href="WinterMenu.html" class="submenu-item">
-        <img src="IMG/Winter.jpg" alt="Lunch">
-        <span>Winter</span>
-    </a>
+            <div>
+                <h4>Explore</h4>
+                <nav class="footer-nav" aria-label="Footer navigation">
+                    <a href="index.html">Home</a>
+                    <a href="menu.html">Browse Menu</a>
+                    <a href="index.html#contact">Contact Us</a>
+                </nav>
+            </div>
 
-    <a href="Desserts.html" class="submenu-item">
-        <img src="IMG\Desserts.jpg" alt="Winter Menu">
-        <span>Desserts</span>
-    </a>
+            <div>
+                <h4>Follow Us</h4>
+                <div class="footer-socials social-links">
+                    <a href="https://www.facebook.com/profile.php?id=61584618687221" target="_blank" rel="noopener"><span class="social-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"/></svg></span><span class="social-label"><span>Facebook</span></span></a>
+                    <a href="https://www.instagram.com/moabgrill_restaurant/" target="_blank" rel="noopener"><span class="social-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/></svg></span><span class="social-label"><span>Instagram</span></span></a>
+                </div>
+            </div>
+        </div>
 
-    <a href="Beverages.html" class="submenu-item">
-        <img src="IMG/Beverages.jpg" alt="Desserts">
-        <span>Beverages</span>
-    </a>
-
-    <a href="ALLMenu.html" class="submenu-item">
-        <img src="IMG\ALL.jpg" alt="Beverages">
-        <span>ALL</span>
-    </a>
-
-</div>
-    
-<!-- LUNCH & DINNER -->
-<!-- APPETIZERS -->
-<h2>APPETIZERS</h2>
-<div class="menu-row">
-    <div class="menu-item"><!--<img src="IMG/traditional1.jpg" alt="Dish 1">--><h3>Pot Stickers</h3><p> 
-4 chicken dumplings fried and topped with spicy 
-sesame oil. Served with soy and rice 
-vinegar dipping sauce. 7.25</p></div>
-    <div class="menu-item"><!--<img src="IMG/traditional1.jpg" alt="Dish 1">--><h3>Cheese Fries & Bacon</h3><p> 
-French fries topped with queso, melted jack and 
-cheddar cheeses, and crispy bacon. 10.95
-Add Chili – $2.50</p></div>
-    <div class="menu-item"><!--<img src="IMG/traditional1.jpg" alt="Dish 1">--><h3>Queso Dip</h3><p>
-Warm cheese dip with a hint of tomato and green 
-chili. Served with fresh corn tortilla chips. 12.45</p></div>
-    <div class="menu-item"><!--<img src="IMG/traditional1.jpg" alt="Dish 1">--><h3>Wings</h3><p>
-10 wings tossed in homemade Buffalo or Thai BBQ 
-sauce. Served with carrots, celery, and ranch or bleu 
-cheese dressing. 12.75</p></div>
-    <div class="menu-item"><!--<img src="IMG/traditional1.jpg" alt="Dish 1">--><h3>Mediterranean Platter</h3><p>
-Hummus dip, kalamata olives, feta, homemade 
-peperonata, cucumbers, tomatoes, and choice 
-of flatbread or tortilla chips. 12.25 (Veggie option)</p></div>
-    <div class="menu-item"><!--<img src="IMG/traditional1.jpg" alt="Dish 1">--><h3>Artichoke Dip</h3><p>
-Creamy blend of cream cheese, Parmesan, spinach, 
-and artichoke hearts with grilled pita. 11.75</p></div>
-</div>
-
-<!-- BASKETS -->
-<h2>BASKETS</h2>
-<div class="menu-row">
-    <div class="menu-item"><p>
-• Basket of Seasoned French Fries •<br>
-• Basket of Sweet Potato Fries •<br>
-• Basket of Battered Onion Rings •<br>
-• Basket of Bread (6 ea) •</p></div>
-</div>
-
-<!-- BURGERS -->
-<h2>BURGERS</h2>
-<div class="menu-row">
-    <!-- 14 cuadros -->
-    <div class="menu-item"><!--<img src="IMG/traditional1.jpg" alt="Dish 1">--><h3>Bison Fiery Jalapeño Burger</h3><p>
-Topped with cheddar cheese & fried 
-cheese-stuffed jalapeño. 18.95</p></div>
-    <div class="menu-item"><!--<img src="IMG/traditional1.jpg" alt="Dish 1">--><h3>Chili Cheeseburger</h3><p>
-Topped with beef chili and melted mixed 
-cheese on an open-face bun. 17.50</p></div>
-    <div class="menu-item"><!--<img src="IMG/traditional1.jpg" alt="Dish 1">--><h3>Surf-n-Turf Burger</h3><p>
-Topped with caramelized onions, pepper jack 
-cheese, shrimp & chipotle sauce. 18.25</p></div>
-    <div class="menu-item"><!--<img src="IMG/traditional1.jpg" alt="Dish 1">--><h3>Chicken Bacon Avocado</h3><p>
-Grilled chicken breast, cheddar cheese, 
-bacon strips & avocado. 15.95</p></div>
-    <div class="menu-item"><!--<img src="IMG/traditional1.jpg" alt="Dish 1">--><h3>Veggie Peperonata Burger</h3><p>
-Topped with homemade peperonata (mixed 
-peppers, onions, tomato, portobello, parsley) 
-and provolone cheese. 14.75 (Veggie Option) 
-Vegan Option Available (No Cheese)</p></div>
-    <div class="menu-item"><!--<img src="IMG/traditional1.jpg" alt="Dish 1">--><h3>Dyablo Burger</h3><p>
-Topped with buffalo sauce, fresh jalapeño, 
-onion, bacon, roasted red pepper & melted 
-cheddar cheese. 17.75</p></div>
-    <div class="menu-item"><!--<img src="IMG/traditional1.jpg" alt="Dish 1">--><h3>Moab Grill Burger</h3><p>
-Topped with bacon strips, guacamole & Swiss. 15.50</p></div>
-    <div class="menu-item"><!--<img src="IMG/traditional1.jpg" alt="Dish 1">--><h3>Onion Lover Burger</h3><p>
-Loaded with grilled onions and cheddar. 15.99</p></div>
-    <div class="menu-item"><!--<img src="IMG/traditional1.jpg" alt="Dish 1">--><h3>Hawaiian Burger</h3><p>
-Topped with teriyaki Thai sauce, ham, pineapple 
-and melted Swiss cheese. 17.75</p></div>
-    <div class="menu-item"><!--<img src="IMG/traditional1.jpg" alt="Dish 1">--><h3>Mushroom Swiss Burger</h3><p>
-Sautéed portobello mushrooms in olive oil 
-and garlic, topped with Swiss cheese. 16.95</p></div>
-    <div class="menu-item"><!--<img src="IMG/traditional1.jpg" alt="Dish 1">--><h3>Southwestern Red Cliff Burger</h3><p>
-Topped with green Chile, salsa, guacamole 
-& cheddar cheese. 16.95</p></div>
-    <div class="menu-item"><!--<img src="IMG/traditional1.jpg" alt="Dish 1">--><h3>The Cowboy Burger</h3><p>
-Topped with BBQ sauce, cheddar cheese, bacon 
-strips & onion ring. 17.95</p></div>
-    <div class="menu-item"><!--<img src="IMG/traditional1.jpg" alt="Dish 1">--><h3>Reuben Burger</h3><p>
-½ lb burger topped with corned beef, sauerkraut, 
-thousand island dressing & Swiss cheese. 17.75</p></div>
-    <div class="menu-item"><!--<img src="IMG/traditional1.jpg" alt="Dish 1">--><h3>Build Your Own Burger</h3><p>
-Classic Burger, Grilled Chicken 
-or Veggie Burger $12.75
-Choose 1/2 lb. fresh ground beef burger, 
-8 oz grilled chicken breast or 
-garden veggie burger (Vegan).
-Bison Burger 16.95 1/2 lb. lean ground bison 
-Toppings – $2 Each: 
-Cheese, Caramelized Onions, Jalapeños, Avocado, 
-Green Chile, Portobello Mushrooms 
-Please inform your server of any food allergies. We use peanuts and other nuts in our kitchen.
-*Consuming raw or undercooked meats, poultry, seafood, shellfish, or eggs may increase your risk of foodborne illness.
-Premium Toppings $2.50 Each:
-Guacamole, Bacon</p></div>
-</div>
-
-<!-- SALADS -->
-<h2>SALADS <span style="float:right; font-size:15px;">ADD TO ANY SALAD<br>
-• Grilled Chicken (8 oz.) 6.50<br>
-• Grilled Salmon (4 oz.) 7.25<br>
-• Grilled Shrimp (5 pcs.) 8.75</span></h2>
-<h4>Served with a dinner roll & your choice of dressing.
-Dressing: Italian, Bleu Cheese, Ranch, Balsamic Vinaigrette,
-Cilantro Lime, Honey Mustard, Thousand Island,
-Gluten-Free | Vegan | Vegetarian options available</h4>
-<div class="menu-row">
-    <div class="menu-item"><!--<img src="IMG/traditional1.jpg" alt="Dish 1">--><h3>House Salad</h3><p>
-Mixed greens, tomatoes, cucumber, cabbage, 
-shredded carrots, and croutons. 6</p></div>
-    <div class="menu-item"><!--<img src="IMG/traditional1.jpg" alt="Dish 1">--><h3>Cheeseburger Salad</h3><p>
-Romaine, tomato, red onion, cheddar & Monterey 
-cheese, topped with 8 oz. hamburger strips, and
-avocado. 17.25</p></div>
-    <div class="menu-item"><!--<img src="IMG/traditional1.jpg" alt="Dish 1">--><h3>Traditional Caesar Salad</h3><p>
-Crisp romaine, croutons, parmesan cheese 
-tossed in classic Caesar dressing. 12.75</p></div>
-    <div class="menu-item"><!--<img src="IMG/traditional1.jpg" alt="Dish 1">--><h3>Beet & Goat Cheese Salad</h3><p>
-Baby spinach and mixed greens with roasted beets, 
-goat cheese, red onions, and spiced walnuts. 14.75</p></div>
-    <div class="menu-item"><!--<img src="IMG/traditional1.jpg" alt="Dish 1">--><h3>Greek Salad</h3><p>
-Mixed greens, kalamata olives, tomatoes, 
-red onions, cucumbers, feta crumbles, tossed 
-in balsamic dressing. 15.75</p></div>
-    <div class="menu-item"><!--<img src="IMG/traditional1.jpg" alt="Dish 1">--><h3>Apple Spinach Walnut Salad</h3><p>
-Baby spinach, sliced apples, cucumber, 
-feta cheese, spiced walnuts. 13.50</p></div>
-    <div class="menu-item"><!--<img src="IMG/traditional1.jpg" alt="Dish 1">--><h3>Cobb Salad with Chicken</h3><p>
-Mixed greens, tomatoes, red onions, boiled egg, 
-avocado, bacon, and bleu cheese crumbles. 17.95
-Our 1/2 lb. burgers are freshly ground in-house daily. Served 
-Sub Salmon (4 oz.): +4.50 | Sub Shrimp (5 pcs): +4.50</p></div>
-</div>
-
-<!-- SANDWICHES -->
-<h2>SANDWICHES</h2>
-<h4>All sandwiches are served with fries.
-Substitute side for salad, onion rings, or sweet potato fries – $2.75 Gluten-Free Bun – $1.75</h4>
-<div class="menu-row">
-    <div class="menu-item"><!--<img src="IMG/traditional1.jpg" alt="Dish 1">--><h3>Chimichurri Chicken Sandwich</h3><p>
-8 oz. grilled chicken breast with chimichurri sauce 
-and mozzarella cheese on rye bread. 15.75</p></div>
-    <div class="menu-item"><!--<img src="IMG/traditional1.jpg" alt="Dish 1">--><h3>Wake & Bake</h3><p>
-Crispy buffalo-style chicken breast, bleu cheese 
-crumbles, provolone cheese, and coleslaw on 
-Texas brioche. 15.75</p></div>
-    <div class="menu-item"><!--<img src="IMG/traditional1.jpg" alt="Dish 1">--><h3>Smokey Shroom</h3><p>
-Portobello mushrooms, provolone cheese, 
-caramelized onions, and basil pesto on wheat 
-bread.14.15 (Veggie Option)</p></div>
-    <div class="menu-item"><!--<img src="IMG/traditional1.jpg" alt="Dish 1">--><h3>Patty Melt</h3><p>
-8 oz. ground beef, grilled onions, Swiss, and 
-thousand island dressing on Texas brioche. 16.75</p></div>
-    <div class="menu-item"><!--<img src="IMG/traditional1.jpg" alt="Dish 1">--><h3>BLT</h3><p>
-Bacon, lettuce, tomato, sliced avocado, and 
-mayo on Texas brioche. 14.25</p></div>
-    <div class="menu-item"><!--<img src="IMG/traditional1.jpg" alt="Dish 1">--><h3>Reuben Sandwich</h3><p>
-Thinly sliced corned beef with sauerkraut, Swiss 
-cheese, and thousand island dressing on marbled 
-rye bread. 15.75</p></div>
-    <div class="menu-item"><!--<img src="IMG/traditional1.jpg" alt="Dish 1">--><h3>Better Than Philly Cheesesteak</h3><p>
-Shaved sirloin steak, grilled onions, mushrooms, 
-red and green peppers, provolone cheese, 
-served with au jus. 15.75</p></div>
-</div>
-
-<!-- SPECIALTIES -->
-<h2>SPECIALTIES</h2>
-<h4>Add a house salad, side of French fries, 
-or onion rings – $4.75</h4>
-<div class="menu-row">
-    <div class="menu-item"><!--<img src="IMG/traditional1.jpg" alt="Dish 1">--><h3>Pastor Pork Quesadilla</h3><p>
-14" flour tortilla grilled with mozzarella cheese, 
-onions, pineapple, and pork al pastor. Served 
-with pico de gallo & guacamole. 16.75</p></div>
-    <div class="menu-item"><!--<img src="IMG/traditional1.jpg" alt="Dish 1">--><h3>Bison Cottage Pie</h3><p>
-Savory ground bison with sautéed peas, 
-onions, garlic, and carrots. Topped with 
-mashed potatoes, cheddar & jack cheese. 
-Served with a dinner roll. 19.80</p></div>
-    <div class="menu-item"><!--<img src="IMG/traditional1.jpg" alt="Dish 1">--><h3>Chicken Tenders Meal (4 pcs.)</h3><p>
-    Crispy breaded chicken tenders with fries. 16.95
-</p></div>
-    <div class="menu-item"><!--<img src="IMG/traditional1.jpg" alt="Dish 1">--><h3>Taco Plate</h3><p>
-Three corn tortillas with grilled chicken or 
-vegetarian (onion, peppers, tomato, mushroom). Served 
-house made salsa & sour cream. 
-with rice, cowboy beans, pico de gallo, 
-16.95
-Substitute: Asada Steak – $3.50, Pork Pastor – $3.00, 
-Fried Cod Fish – $3.00 (with chipotle mayo)</p></div>
-    <div class="menu-item"><!--<img src="IMG/traditional1.jpg" alt="Dish 1">--><h3>Fully Loaded Burrito </h3><p>
-Large flour tortilla filled with grilled chicken, 
-cheddar & jack cheese, cowboy beans, rice, 
-mixed peppers & onions. Smothered in 
-homemade green or red chili sauce, topped 
-with pico de gallo. Served with tortilla chips, 
-house made salsa & sour cream. 16.25
-Substitute: Asada Steak – $3.50 or Pork Pastor – $3.00</p></div>
-</div>
-
-<!-- FROM THE GRILL -->
-<h2>FROM THE GRILL</h2>
-<h4>All entrees served with a dinner roll and choice of 2 sides. Add sautéed mushrooms & grilled onions – $3.95</h4>
-<div class="menu-row">
-    <div class="menu-item"><!--<img src="IMG/traditional1.jpg" alt="Dish 1">--><h3>RIBEYE STEAK</h3><p>
-12 oz. ribeye steak cooked to order. 
-35.75</p></div>
-    <div class="menu-item"><!--<img src="IMG/traditional1.jpg" alt="Dish 1">--><h3>STEAK & SHRIMP</h3><p>
-8 oz. flat iron steak and 3 jumbo 
-shrimp. 28.75</p></div>
-    <div class="menu-item"><!--<img src="IMG/traditional1.jpg" alt="Dish 1">--><h3>CHIMICHURRI STEAK</h3><p>
-8 oz. flat iron steak topped with 
-a bold chimichurri blend of 
-parsley, garlic, vinegar, olive oil, 
-and spices. 27.75</p></div>
-    <div class="menu-item"><!--<img src="IMG/traditional1.jpg" alt="Dish 1">--><h3>CUBAN FLAT IRON STEAK</h3><p>
-8 oz. sirloin in a Cuban-influenced 
-marinade with garlic, oregano, 
-cumin, and fresh lime juice, topped 
-with our mojo sauce (homemade 
-lime-cilantro vinaigrette). 27.75</p></div>
-    <div class="menu-item"><!--<img src="IMG/traditional1.jpg" alt="Dish 1">--><h3>FLAT IRON STEAK 8 oz. 25.50</h3><p></p></div>
-    <div class="menu-item"><!--<img src="IMG/traditional1.jpg" alt="Dish 1">--><h3>BBQ RIBS</h3><p>
-One pound of St. Louis fire-braised 
-pork ribs, served with your choice 
-of two sides. 28.25</p></div>
-    <div class="menu-item"><!--<img src="IMG/traditional1.jpg" alt="Dish 1">--><h3>STEAK DONENESS</h3><p>
-GUIDE:<br>
-Rare – Cold red center<br>
-Medium Rare – Warm red center<br>
-Medium – Hot pink center<br>
-Medium Well – Slightly pink center<br>
-Well Done – No pink</p></div>
-</div>
-<!-- SEAFOOD FAVS -->
-<h2>SEAFOOD FAVS</h2>
-<div class="menu-row">
-    <div class="menu-item"><!--<img src="IMG/traditional1.jpg" alt="Dish 1">--><h3>Chimichurri Grilled Shrimp</h3><p>
-6 jumbo shrimp, charred and drizzled with zesty chimichurri 
-sauce. Served with two sides and a dinner roll. 21.95</p></div>
-    <div class="menu-item"><!--<img src="IMG/traditional1.jpg" alt="Dish 1">--><h3>Fish & Chips</h3><p>
-Three cod fillets battered in tempura, served 
-with fries, coleslaw & tartar sauce. 17.75
-Substitute: Sweet potato fries, house salad, onion rings, or soup – $2.75</p></div>
-    <div class="menu-item"><!--<img src="IMG/traditional1.jpg" alt="Dish 1">--><h3>Grilled Salmon</h3><p>
-8 oz. Atlantic salmon grilled to medium (unless specified), 
-garnished with spicy peperonata. 
-Served with two sides and a dinner roll. 24.95</p></div>
-    <div class="menu-item"><!--<img src="IMG/traditional1.jpg" alt="Dish 1">--><h3>Grilled Trout</h3><p>
-8 oz. river trout grilled to medium (unless specified). 
-Served with two sides and a dinner roll. 22.75</p></div>
-    <div class="menu-item"><!--<img src="IMG/traditional1.jpg" alt="Dish 1">--><h3>SIDES</h3><p>
-• French Fries •<br>
-• Onion Rings •<br>
-• Sweet Potato Fries •<br>
-• Rice Pilaf (Slow-Baked In Tomato Base) •<br>
-• House Salad •<br>
-• Caesar Salad •<br>
-• Mac N Cheese •<br>
-• Mashed Potatoes With Brown Gravy •<br>
-• Cowboy Beans (Southwest Style) •<br>
-• Beef Chili •<br>
-• Seasonal Vegetables •<br>
-• Baked Potato (after 5pm) Load it for $1.95 •<br>
-</p></div>
-</div>
-
-<!-- SPECIALTY PIZZAS -->
-<h2>SPECIALTY PIZZAS</h2>
-<h4>Small (10”) $15.95 | Large (14”) $21.95
-Substitute (12”) GF VEGAN crust — $6.00</h4>
-<div class="menu-row">
-    <!-- 13 cuadros -->
-    <div class="menu-item"><!--<img src="IMG/traditional1.jpg" alt="Dish 1">--><h3>
-Utah Dreamin’</h3>Red sauce, artichoke hearts, 
-fresh tomato, avocado, blue 
-cheese, mozzarella<p>
-</p></div>
-    <div class="menu-item"><!--<img src="IMG/traditional1.jpg" alt="Dish 1">--><h3>Buffalo Chicken</h3><p>
-Buffalo sauce, grilled chicken,bleu 
-cheese crumbles, mozzarella</p></div>
-    <div class="menu-item"><!--<img src="IMG/traditional1.jpg" alt="Dish 1">--><h3>BBQ Chicken</h3><p>
-Grilled chicken, BBQ sauce, red 
-onions, black olives, pineapple, 
-cilantro, mozzarella</p></div>
-    <div class="menu-item"><!--<img src="IMG/traditional1.jpg" alt="Dish 1">--><h3>The Great White</h3><p>
-Alfredo sauce, grilled chicken, 
-spinach, mozzarella, feta</p></div>
-    <div class="menu-item"><!--<img src="IMG/traditional1.jpg" alt="Dish 1">--><h3>Carnivore</h3><p>
-Red sauce, ground beef, pepperoni, Italian sausage, bacon, ham, 
-mozzarella</p></div>
-    <div class="menu-item"><!--<img src="IMG/traditional1.jpg" alt="Dish 1">--><h3>Santa Fe</h3><p>
-Homemade green Chile sauce, 
-grilled chicken, black olives, 
-jalapeños, fresh tomatoes, avocado, mozzarella, and cheddar 
-cheeses
-</p></div>
-    <div class="menu-item"><!--<img src="IMG/traditional1.jpg" alt="Dish 1">--><h3>Honey Chicken</h3><p>
-Honey, chicken, mozzarella</p></div>
-    <div class="menu-item"><!--<img src="IMG/traditional1.jpg" alt="Dish 1">--><h3>Hawaiian</h3><p>
-Red sauce, ham, pineapple, 
-mozzarella</p></div>
-    <div class="menu-item"><!--<img src="IMG/traditional1.jpg" alt="Dish 1">--><h3>Pesto Pow</h3><p>
-Basil pesto sauce, chicken, tomatoes, garlic, pepperoni, black 
-olives, Parmesan, mozzarella</p></div>
-    <div class="menu-item"><!--<img src="IMG/traditional1.jpg" alt="Dish 1">--><h3>The Vegan</h3><p>
-Red sauce, green peppers, fresh 
-portobello and mushrooms, 
-onions, tomatoes, capers</p></div>
-    <div class="menu-item"><!--<img src="IMG/traditional1.jpg" alt="Dish 1">--><h3>Popeye-Veggie</h3><p>
-Olive oil sauce, spinach, garlic, 
-portobello mushroom, tomato, 
-olives, feta, mozzarella</p></div>
-    <div class="menu-item"><!--<img src="IMG/traditional1.jpg" alt="Dish 1">--><h3>Margherita</h3><p>
-Olive oil with a hint of red sauce, 
-fresh tomatoes, roasted garlic, 
-fresh basil, Parmesan, mozzarella</p></div>
-    <div class="menu-item"><!--<img src="IMG/traditional1.jpg" alt="Dish 1">--><h3>Moab Downtown</h3><p>
-Red sauce, green peppers, fresh 
-mushrooms, onions, black olives, 
-tomatoes, roasted garlic, ham, 
-sausage, pepperoni, mozzarella</p></div>
-</div>
-<!-- CREATE YOUR OWN PIZZA -->
-<h2>CREATE YOUR OWN PIZZA</h2>
-<div class="menu-item custom-horizontal">
-    <div class="custom-column">
-        <h4>MOZZARELLA CHEESE PIZZA:</h4>
-        <p>Small (10") 13.99
-Large (14") 17.99</p>
-    </div>
-    <div class="custom-column">
-        <h4>VEGGIE TOPPINGS:</h4>
-        <p>Small 1.15 | Large 1.75
-Green Peppers, Pineapple, 
-Onion, Fresh Tomato, 
-Roasted Garlic, Black Olives, 
-Jalapeño, Fresh Mushrooms</p>
-    </div>
-    <div class="custom-column">
-        <h4>SAUCE CHOICES:</h4>
-        <p>Traditional Red Sauce, 
-Alfredo Sauce, Green Chili 
-Sauce, Pesto Sauce</p>
-    </div>
-    <div class="custom-column">
-        <h4>MEAT / CHEESE TOPPINGS:</h4>
-        <p>
-Small 1.25 | Large 1.75
-Extra Mozzarella, Feta, 
-Aged Parmesan, Bleu Cheese 
-Crumbles, Pepperoni, 
-Italian Sausage, Ham, Bacon, 
-Ground Beef, Chicken Breast</p>
-    </div>
-</div>
-
-<!-- PASTAS -->
-<h2>PASTAS</h2>
-<h4>All pastas served with a dinner roll
-Add a house salad, side of French fries, 
-or onion rings – $4.75</h4>
-<div class="menu-row">
-    <div class="menu-item"><!--<img src="IMG/traditional1.jpg" alt="Dish 1">--><h3>Chicken Parmigiana</h3><p>
-6 oz breaded chicken breast baked in our marinara 
-basil sauce or alfredo sauce, topped with provolone 
-and parmesan cheese over fettucine pasta. 19.95</p></div>
-    <div class="menu-item"><!--<img src="IMG/traditional1.jpg" alt="Dish 1">--><h3>Fettucine and Meatballs</h3><p>
-Italian style meatballs in a tomato basil sauce
-served over a bed of fettucine noodles. Topped
- with parmesan cheese. 19.95</p></div>
-    <div class="menu-item"><!--<img src="IMG/traditional1.jpg" alt="Dish 1">--><h3>Rosy's Homemade Spinach Lasagna</h3><p>
-Layers of pasta, fresh spinach, ricotta, Parmesan,
- Romano, and mozzarella, baked together and 
-topped with our homemade marinara sauce 
-and parmesan cheese. 18.25</p></div>
-    <div class="menu-item"><!--<img src="IMG/traditional1.jpg" alt="Dish 1">--><h3>Bacon Portobello Penne</h3><p>
-Sautéed portobello mushroom, red onion, spinach, 
-and bacon on a bed of penne pasta, finished with a
-red wine cream sauce and parmesan cheese. 18.25
-Substitute 8oz flat iron steak 8.75</p></div>
-    <div class="menu-item"><!--<img src="IMG/traditional1.jpg" alt="Dish 1">--><h3>Shrimp Creamy Pesto Penne</h3><p>
-6 shrimp sautéed with fresh mushrooms and red 
-peppers on a bed of penne pasta, with creamy pesto 
-sauce and topped with parmesan cheese. 21.95</p></div>
-    <div class="menu-item"><!--<img src="IMG/traditional1.jpg" alt="Dish 1">--><h3>Chicken & Broccoli Alfredo</h3><p>
-Fettuccine noodles tossed with fresh broccoli and 
-alfredo sauce, topped with crispy chicken and
-parmesan cheese. 19.99 Substitute shrimp — $5.50</p></div>
-</div>
-
-<footer class="footer" id="contacto">
-  <div class="footer-container">
-
-    <div class="footer-brand">
-      <img src="LogoMG.jpg" alt="Moab Grill Logo" class="footer-logo-img">
-    </div>
-
-    <div class="footer-links">
-      <a href="index.html">HOME</a>
-    </div>
-
-    <div class="footer-socials">
-      <a href="https://www.facebook.com/profile.php?id=61584618687221" target="_blank" class="social-item">
-        <img src="IMG/facebook.jpg" alt="Facebook">
-        <span>Facebook</span>
-      </a>
-
-      <a href="https://www.instagram.com/moabgrill_restaurant/" target="_blank" class="social-item">
-        <img src="IMG/instagram.jpg" alt="Instagram">
-        <span>Instagram</span>
-      </a>
-    </div>
-
-    <div class="footer-copy">
-      © 2025 Moab Grill — All rights reserved.
-    </div>
-
-  </div>
-</footer>
+        <div class="footer-copy">
+            <span>© 2025 Moab Grill — All rights reserved.</span>
+            <span>540 S Main St, Moab, UT 84532 · (435) 259-4848</span>
+        </div>
+    </footer>
 
 </body>
 </html>

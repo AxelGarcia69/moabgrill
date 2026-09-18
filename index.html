@@ -3,162 +3,459 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="moabgrill.ico">
-
-    <title>Moab Grill</title>
-
-    <link rel="stylesheet" href="styles.css">
-
-    <script defer src="script.js"></script>
+    <title>Moab Grill — Restaurant in Moab, Utah</title>
+    <meta name="description" content="Moab Grill — hearty breakfasts, burgers, pizzas and western hospitality in the heart of Moab, Utah. Open daily 7 AM – 10 PM at 540 S Main St.">
+    <link rel="canonical" href="https://www.moabgrill.com/">
+    <meta name="theme-color" content="#141110">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Moab Grill">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:url" content="https://www.moabgrill.com/">
+    <meta property="og:title" content="Moab Grill — Restaurant in Moab, Utah">
+    <meta property="og:description" content="Moab Grill — hearty breakfasts, burgers, pizzas and western hospitality in the heart of Moab, Utah. Open daily 7 AM – 10 PM at 540 S Main St.">
+    <meta property="og:image" content="https://www.moabgrill.com/IMG/og-cover.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Moab Grill restaurant on Main Street, Moab, Utah">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Moab Grill — Restaurant in Moab, Utah">
+    <meta name="twitter:description" content="Moab Grill — hearty breakfasts, burgers, pizzas and western hospitality in the heart of Moab, Utah. Open daily 7 AM – 10 PM at 540 S Main St.">
+    <meta name="twitter:image" content="https://www.moabgrill.com/IMG/og-cover.jpg">
+    <link rel="icon" href="IMG/moabgrill.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="IMG/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="IMG/favicon-192.png">
+    <link rel="apple-touch-icon" href="IMG/apple-touch-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://images.unsplash.com">
+    <link rel="stylesheet" href="css/styles.css">
+    <script>document.documentElement.classList.add('js');</script>
+    <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script defer src="js/script.js"></script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "Moab Grill",
+  "url": "https://www.moabgrill.com/",
+  "image": "https://www.moabgrill.com/IMG/og-cover.jpg",
+  "logo": "https://www.moabgrill.com/IMG/apple-touch-icon.png",
+  "telephone": "+1-435-259-4848",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "540 S Main St",
+    "addressLocality": "Moab",
+    "addressRegion": "UT",
+    "postalCode": "84532",
+    "addressCountry": "US"
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "opens": "07:00",
+      "closes": "22:00"
+    }
+  ],
+  "servesCuisine": [
+    "American",
+    "Breakfast",
+    "Burgers",
+    "Steakhouse"
+  ],
+  "priceRange": "$$",
+  "hasMenu": "https://www.moabgrill.com/menu.html",
+  "sameAs": [
+    "https://www.facebook.com/profile.php?id=61584618687221",
+    "https://www.instagram.com/moabgrill_restaurant/"
+  ]
+}
+    </script>
 </head>
 
 <body>
-    <header>
-        <h1>
-            <img src="LogoMG.jpg" alt="Logo" width="85">
-        </h1>
 
-        <nav>
-            <a href="menu.html">BROWSE MENU</a>
-            <a href="#location">LOCATION</a>
-            <a href="Contact.html">CONTACT US</a>
-        </nav>
+    <!-- ================= HEADER ================= -->
+    <header class="site-header on-hero">
+        <div class="header-inner">
+            <a href="index.html" class="brand" aria-label="Moab Grill — Home">
+                <img src="IMG/logo1-cream.png" alt="Moab Grill logo">
+                <span class="brand-name">Moab Grill<small>Moab · Utah</small></span>
+            </a>
+
+            <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false"><span></span></button>
+
+            <nav class="site-nav" aria-label="Main navigation">
+                <a href="index.html" aria-current="page"><svg class="nav-ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg><span>Home</span></a>
+                <a href="#contact"><svg class="nav-ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg><span>Contact</span></a>
+                <a href="menu.html" class="btn btn-solid nav-cta">Browse Menu</a>
+            </nav>
+        </div>
     </header>
- 
-<section class="hero">
-    <div class="slider-wrapper">
 
-        <button class="arrow left" onclick="prevSlide()">&#10094;</button>
+    <!-- ================= HERO (PHOTO + LOGO) ================= -->
+    <section class="hero hero-video" aria-label="Welcome to Moab Grill">
+        <div class="hero-bg" style="background-image:url('IMG/header-3-crop.jpg')" aria-hidden="true"></div>
 
-        <div class="slider" id="slider">
-            <img src="IMG/slide1.JPEG" alt="Welcome">
-            <img src="IMG/slide2.JPEG" alt="News">
-            <img src="IMG/slide3.JPEG" alt="News2">
+        <div class="hero-inner hero-split">
+            <div class="hero-content">
+                <span class="hero-eyebrow">Est. Moab · Utah — Home-style cooking</span>
+                <h1 class="hero-title">Taste the <em>spirit</em><br>of Moab.</h1>
+                <p class="hero-tagline">
+                    Dishes crafted with warmth, flavor and tradition. From sunrise breakfasts
+                    to hearty dinners, every plate is made to feel like home.
+                </p>
+                <div class="hero-actions">
+                    <a href="menu.html" class="btn btn-light">Browse Our Menu</a>
+                    <a href="#contact" class="btn btn-ghost">Find Us</a>
+                </div>
+            </div>
+
+            <div class="hero-logo">
+                <img src="IMG/logo1-cream.png" alt="Moab Grill — bull skull logo">
+            </div>
         </div>
 
-        <button class="arrow right" onclick="nextSlide()">&#10095;</button>
-
-    </div>
-
-    <div class="hero-text text-box">
-        <h2>Welcome to Moab Grill</h2>
-        <p>
-            Experience the Moab Grill through dishes crafted with warmth, flavor, and tradition. From sunrise breakfasts to hearty dinners, every plate is made to feel like home.
-        </p>
-    </div>
-
-</section>
-
-<script>
-let slider = document.getElementById('slider');
-let current = 0;
-
-function nextSlide() {
-    current = Math.min(current + 1, slider.children.length - 1);
-    slider.scrollTo({ left: slider.clientWidth * current, behavior: "smooth" });
-}
-
-function prevSlide() {
-    current = Math.max(current - 1, 0);
-    slider.scrollTo({ left: slider.clientWidth * current, behavior: "smooth" });
-}
-</script>
-    
-
-<!-- SECCIÓN INTERMEDIA: IMAGEN + TEXTO -->
-<section class="info-section">
-
-   <div class="info-text text-box">
-  <h2>Download and Explore Our Menus</h2>
-
-
-  <!-- PDF SECTION -->
-  <section class="pdf-section">
-    
-
-    <div class="pdf-buttons">
-      <a href="Menu_Breakfast.pdf" target="_blank" class="pdf-btn">Breakfast</a>
-      <a href="Menu_LunchDinner.pdf" target="_blank" class="pdf-btn">Lunch & Dinner</a>
-      <a href="Drinks & Desserts.pdf" target="_blank" class="pdf-btn">Drinks & Desserts</a>
-      <a href="Menu_Winter.pdf" target="_blank" class="pdf-btn">Winter</a>
-    </div>
-  </section>
-</div>
-
-    <div class="info-image">
-        <img src="IMG/menuHome.png" alt="Info Moab">
-    </div>
-
-</section>
-    <!-- VIDEO SECTION -->
-    <section class="home-video">
-        <div class="video-container">
-
-            <video id="moabVideo" controls autoplay muted>
-                <source src="IMG/MoabVideo.MOV" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-
-            <button id="replayBtn" class="replay-btn" style="display:none;">
-                Replay Video
-            </button>
-
-        </div>
-
-        <h2 class="video-slogan">Taste the spirit of Moab in every bite.</h2>
     </section>
-<div class="map-container">
-<section class="location-card" id="location">
-    <h2 class="location-title">📍 Our Location</h2>
 
-    <p class="location-text">
-        Visit us at the heart of Moab, Enjoy great food and warm service.
-    </p>
+    <!-- ================= LIVE THE EXPERIENCE (video reel) ================= -->
+    <section class="section experience" id="experience">
+        <div class="container">
+            <div class="experience-grid">
 
-    <div class="map-container">
-        <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3119.619940650488!2d-109.55331732407231!3d38.56556946621529!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8747e1f3d8382903%3A0x69e4f09eb631715b!2s540%20S%20Main%20St%2C%20Moab%2C%20UT%2084532%2C%20EE.%20UU.!5e0!3m2!1ses-419!2smx!4v1763267041675!5m2!1ses-419!2smx"
-            loading="lazy"
-            allowfullscreen=""
-            referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
-    </div>
-            <p class="location-text">
-540 S Main St, Moab, UT 84532
-    </p>
-</section>
-</div>
-    
-<footer class="footer" id="contacto">
-  <div class="footer-container">
+                <div class="experience-copy reveal">
+                    <span class="eyebrow">Live the experience</span>
+                    <h2 class="section-title">From Main Street to Your Table</h2>
+                    <p class="about-lead">Red rock mornings, a busy grill and the people who make it feel like home.</p>
+                    <p class="section-sub">This is a day at Moab Grill. Turn the sound on and take a look around before you visit.</p>
+                </div>
 
-    <div class="footer-brand">
-      <img src="LogoMG.jpg" alt="Moab Grill Logo" class="footer-logo-img">
-    </div>
+            <div class="reel">
+                <video class="reel-video" src="IMG/Moab-video-1.mp4" poster="IMG/video-poster.jpg" muted loop playsinline autoplay preload="metadata" aria-label="A day at Moab Grill: Main Street, the kitchen and our guests"></video>
+                <img class="reel-poster" src="IMG/video-poster.jpg" alt="" aria-hidden="true">
 
-    <div class="footer-links">
-      <a href="MoabGrill.html">HOME</a>
-    </div>
+                <button class="reel-play" type="button" aria-label="Play video">
+                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.14v13.72c0 .8.87 1.3 1.56.88l10.8-6.86a1.05 1.05 0 0 0 0-1.76L9.56 4.26C8.87 3.84 8 4.34 8 5.14z"/></svg>
+                </button>
 
-    <div class="footer-socials">
-      <a href="https://www.facebook.com/profile.php?id=61584618687221" target="_blank" class="social-item">
-        <img src="IMG/facebook.jpg" alt="Facebook">
-        <span>Facebook</span>
-      </a>
+                <button class="reel-sound" type="button" aria-pressed="false">
+                    <svg class="ic-off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><line x1="23" y1="9" x2="17" y2="15"/><line x1="17" y1="9" x2="23" y2="15"/></svg>
+                    <svg class="ic-on" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>
+                    <span>Sound off</span>
+                </button>
 
-      <a href="https://www.instagram.com/moabgrill_restaurant/" target="_blank" class="social-item">
-        <img src="IMG/instagram.jpg" alt="Instagram">
-        <span>Instagram</span>
-      </a>
-    </div>
+                <div class="reel-progress" aria-hidden="true"><span></span></div>
+            </div>
 
-    <div class="footer-copy">
-      © 2025 Moab Grill — All rights reserved.
-    </div>
+            </div>
+        </div>
+    </section>
 
-  </div>
-</footer>
+    <!-- ================= ABOUT US + GALLERY (infinite card fan) ================= -->
+    <section class="section gallery" id="about">
+        <div class="container">
+            <div class="about-grid">
 
+                <div class="about-copy reveal">
+                    <span class="eyebrow">About Us</span>
+                    <h2 class="section-title">Our Story</h2>
+                    <p class="about-lead">
+                        The Sweet Savor of Gratitude and Grandma's Recipes: The New Moab Grill.
+                    </p>
+                    <p class="section-sub">
+                        The Garcia family cooks! And now they present first-class cooking at the
+                        Moab Grill. As they enter their new family enterprise as both management
+                        and cook staff of this landmark restaurant, they are filled with gratitude
+                        to those who have helped them.
+                    </p>
+                    <p class="video-slogan about-slogan">"Taste the spirit of Moab in every bite."</p>
+                </div>
+
+                <div class="about-fan">
+                    <div class="fan-layout" aria-label="Photos of Moab Grill">
+                        <div class="fan-card"><img src="IMG/hero-exterior.jpg" alt="Moab Grill exterior with wooden facade" style="--pos:20% 42%" loading="lazy"></div>
+                        <div class="fan-card"><img src="IMG/hero-tree.jpg" alt="Moab Grill interior decorated for the holidays" loading="lazy"></div>
+                        <div class="fan-card"><img src="IMG/hero-sign.jpg" alt="Moab Grill road sign on Main Street" loading="lazy"></div>
+                        <div class="fan-card"><img src="IMG/hero-interior.jpg" alt="Moab Grill dining room with leather booths" loading="lazy"></div>
+                    </div>
+
+                    <div class="fan-controls">
+                        <button class="fan-arrow fan-prev" aria-label="Previous photo">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+                        </button>
+                        <div class="fan-dots" aria-hidden="true"></div>
+                        <button class="fan-arrow fan-next" aria-label="Next photo">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= FEATURED (interactive GSAP masks) ================= -->
+    <section class="section featured" id="featured" style="padding-top:0">
+        <div class="container">
+            <div class="section-head reveal">
+                <span class="eyebrow">House favorites</span>
+                <h2 class="section-title">What We're Known For</h2>
+            </div>
+
+            <div class="featured-grid">
+                <ol class="featured-list">
+                    <li class="featured-item active" tabindex="0"
+                        data-clip="clip-rows"
+                        data-image="IMG/Burger-1.jpg">
+                        <span class="featured-num">01</span>
+                        <div class="featured-body">
+                            <h3>Our Signature<br>Burgers</h3>
+                            <div class="featured-desc"><div>
+                                <p>Big, bold and made for Moab people. From juicy beef classics to our unique bison creations, with more than 10 signature burgers to choose from&hellip; or build your own burger and create it exactly the way you like it!</p>
+                            </div></div>
+                        </div>
+                    </li>
+                    <li class="featured-item" tabindex="0"
+                        data-clip="clip-bento"
+                        data-image="IMG/legendary-grill-1.jpg"
+                        data-images="IMG/legendary-grill-1.jpg, IMG/legendary-grill-2.jpg, IMG/legendary-grill-3.jpg">
+                        <span class="featured-num">02</span>
+                        <div class="featured-body">
+                            <h3>Legendary<br>Grill</h3>
+                            <div class="featured-desc"><div>
+                                <p>Exceptional flavors and bold grill favorites define our signature selection, featuring premium ribeyes and sirloins, complemented by grilled shrimp, trout, fish &amp; chips, and smoky BBQ ribs. Served with your choice of two sides.</p>
+                            </div></div>
+                        </div>
+                    </li>
+                    <li class="featured-item" tabindex="0"
+                        data-clip="clip-pixels"
+                        data-image="IMG/authentic-breakfast-1.jpg"
+                        data-images="IMG/authentic-breakfast-1.jpg, IMG/authentic-breakfast-2.jpg, IMG/authentic-breakfast-3.jpg, IMG/authentic-breakfast-4.jpg, IMG/authentic-breakfast-5.jpg"
+                        data-zooms="1.2, 1.45, 1.45, 1.25, 1.35"
+                        data-focus="50 60, 50 55, 50 66, 50 58, 50 54">
+                        <span class="featured-num">03</span>
+                        <div class="featured-body">
+                            <h3>Authentic<br>Breakfast</h3>
+                            <div class="featured-desc"><div>
+                                <p>Wake up hungry. Leave happy. From classic eggs your way and hearty breakfast meats to fluffy pancakes, French toast, crepes, chilaquiles, breakfast burritos, Monte Cristo, cinnamon rolls, and fresh granola yogurt &mdash; we&rsquo;ve got something for every morning craving.</p>
+                                <p>Choose from 5+ signature omelets or build your own, and don&rsquo;t miss our Blue Corn Pancakes, a unique Moab favorite that&rsquo;s not something you find everywhere. Complete your morning with fresh coffee, hot cocoa, tea, juices, and more.</p>
+                                <p class="featured-tag">Big breakfast. Big flavors. A true Moab morning starts here.</p>
+                            </div></div>
+                        </div>
+                    </li>
+                    <li class="featured-item" tabindex="0"
+                        data-clip="clip-slats"
+                        data-image="IMG/Breakfast-1.jpeg"
+                        data-images="IMG/Breakfast-1.jpeg, IMG/Desserts-1.jpg"
+                        data-zooms="1.32, 1.75">
+                        <span class="featured-num">04</span>
+                        <div class="featured-body">
+                            <h3>Moab Grill<br>Desserts</h3>
+                            <div class="featured-desc"><div>
+                                <p>Saving room for something sweet? Indulge in our Classic Cheesecake, Mexican Chocolate Cake, Pie du Jour, Vanilla Cr&egrave;me Br&ucirc;l&eacute;e, and Ice Cream Sundae &mdash; the perfect way to finish your meal.</p>
+                                <p class="featured-tag">From rich and chocolatey to creamy and refreshing, there&rsquo;s a sweet ending for every craving.</p>
+                            </div></div>
+                        </div>
+                    </li>
+                </ol>
+
+                <div class="featured-visual">
+                    <div class="featured-glow" aria-hidden="true"></div>
+                    <svg viewBox="0 0 500 500" class="featured-svg" role="img" aria-label="Moab Grill signature dish">
+                        <defs>
+                            <clipPath id="clip-rows">
+                                <path class="path" d="M480.6,235H19.4c-6,0-10.8-4.9-10.8-10.8v-9.5c0-6,4.9-10.8,10.8-10.8h461.1c6,0,10.8,4.9,10.8,10.8v9.5C491.4,230.2,486.6,235,480.6,235z"/>
+                                <path class="path" d="M483.1,362.4H16.9c-4.6,0-8.3-3.7-8.3-8.3v-1.8c0-4.6,3.7-8.3,8.3-8.3h466.1c4.6,0,8.3,3.7,8.3,8.3v1.8C491.4,358.7,487.7,362.4,483.1,362.4z"/>
+                                <path class="path" d="M460.3,336.3H39.7c-17.2,0-31.1-13.9-31.1-31.1v-31.5c0-17.2,13.9-31.1,31.1-31.1h420.7c17.2,0,31.1,13.9,31.1,31.1v31.5C491.4,322.4,477.5,336.3,460.3,336.3z"/>
+                                <path class="path" d="M459.2,196.2H40.8v-35c0-47.5,38.5-86,86-86h246.5c47.5,0,86,38.5,86,86V196.2z"/>
+                                <path class="path" d="M441.9,424.9H58.1c-9.6,0-17.3-7.8-17.3-17.3v-37.4h418.5v37.4C459.2,417.1,451.5,424.9,441.9,424.9z"/>
+                            </clipPath>
+
+                            <clipPath id="clip-bento">
+                                <rect class="path" x="20" y="20" width="200" height="280" rx="12"/>
+                                <rect class="path" x="20" y="320" width="200" height="160" rx="12"/>
+                                <rect class="path" x="240" y="20" width="240" height="140" rx="12"/>
+                                <rect class="path" x="240" y="180" width="110" height="160" rx="12"/>
+                                <rect class="path" x="370" y="180" width="110" height="160" rx="12"/>
+                                <rect class="path" x="240" y="360" width="240" height="120" rx="12"/>
+                            </clipPath>
+
+                            <clipPath id="clip-pixels">
+                                <rect class="path" x="20"  y="20"  width="140" height="140" rx="4"/>
+                                <rect class="path" x="180" y="20"  width="140" height="140" rx="4"/>
+                                <rect class="path" x="340" y="20"  width="140" height="140" rx="4"/>
+                                <rect class="path" x="20"  y="180" width="140" height="140" rx="4"/>
+                                <rect class="path" x="180" y="180" width="140" height="140" rx="4"/>
+                                <rect class="path" x="340" y="180" width="140" height="140" rx="4"/>
+                                <rect class="path" x="20"  y="340" width="140" height="140" rx="4"/>
+                                <rect class="path" x="180" y="340" width="140" height="140" rx="4"/>
+                                <rect class="path" x="340" y="340" width="140" height="140" rx="4"/>
+                            </clipPath>
+
+                            <clipPath id="clip-slats">
+                                <rect class="path" x="-110" y="27" width="720" height="78" rx="16" transform="rotate(-18 250 250)"/>
+                                <rect class="path" x="-110" y="119" width="720" height="78" rx="16" transform="rotate(-18 250 250)"/>
+                                <rect class="path" x="-110" y="211" width="720" height="78" rx="16" transform="rotate(-18 250 250)"/>
+                                <rect class="path" x="-110" y="303" width="720" height="78" rx="16" transform="rotate(-18 250 250)"/>
+                                <rect class="path" x="-110" y="395" width="720" height="78" rx="16" transform="rotate(-18 250 250)"/>
+                            </clipPath>
+                        </defs>
+
+                        <g class="featured-group" clip-path="url(#clip-rows)">
+                            <image class="featured-image"
+                                   href="IMG/Burger-1.jpg"
+                                   width="500" height="500" preserveAspectRatio="xMidYMid slice"/>
+                        </g>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= MENUS ================= -->
+    <section class="section" id="menus" style="padding-top:0">
+        <div class="container">
+            <div class="section-head center reveal">
+                <span class="eyebrow">Crafted daily</span>
+                <h2 class="section-title">Explore Our Menus</h2>
+                <p class="section-sub">
+                    Over 100 dishes made from scratch — pick a menu and find your next favorite plate.
+                </p>
+            </div>
+
+            <div class="cat-grid">
+                <a href="Breakfast.html" class="cat-card reveal">
+                    <img src="IMG/Breakfast-2.jpg" alt="Moab Grill breakfast spread: biscuits and gravy, crepes, breakfast burrito and eggs" loading="lazy">
+                    <div class="cat-card-label">
+                        <h3><span>Sunrise favorites</span>Breakfast</h3>
+                        <span class="cat-cta" aria-hidden="true"><span class="cat-cta-text">View menu</span><span class="cat-cta-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span></span>
+                    </div>
+                </a>
+
+                <a href="LunchDinner.html" class="cat-card reveal d1">
+                    <img src="IMG/Lunch-1.jpg" alt="Moab Grill grilled steak with onion rings and fries" loading="lazy">
+                    <div class="cat-card-label">
+                        <h3><span>Grill classics</span>Lunch &amp; Dinner</h3>
+                        <span class="cat-cta" aria-hidden="true"><span class="cat-cta-text">View menu</span><span class="cat-cta-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span></span>
+                    </div>
+                </a>
+
+                <a href="Desserts.html" class="cat-card reveal">
+                    <img src="IMG/Desserts-1.jpg" alt="Moab Grill hot chocolate topped with whipped cream and chocolate drizzle" loading="lazy">
+                    <div class="cat-card-label">
+                        <h3><span>Sweet endings</span>Desserts</h3>
+                        <span class="cat-cta" aria-hidden="true"><span class="cat-cta-text">View menu</span><span class="cat-cta-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span></span>
+                    </div>
+                </a>
+
+                <a href="Beverages.html" class="cat-card reveal d1">
+                    <img src="https://images.unsplash.com/photo-1581098365948-6a5a912b7a49?auto=format&fit=crop&w=1200&q=80" alt="Ice-cold Coca-Cola can covered in condensation" loading="lazy">
+                    <div class="cat-card-label">
+                        <h3><span>Refreshments</span>Beverages</h3>
+                        <span class="cat-cta" aria-hidden="true"><span class="cat-cta-text">View menu</span><span class="cat-cta-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span></span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= LOCATION ================= -->
+    <section class="section" id="contact" style="padding-top:0">
+        <div class="container">
+            <div class="section-head center reveal">
+                <span class="eyebrow">Come say hi</span>
+                <h2 class="section-title">Find Us in the Heart of Moab</h2>
+                <p class="section-sub">Great food and warm service, right on Main Street.</p>
+            </div>
+
+            <div class="location-grid">
+                <div class="location-info reveal">
+                    <div class="info-row">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                        <div>
+                            <h4>Address</h4>
+                            <p>540 S Main St, Moab, UT 84532</p>
+                        </div>
+                    </div>
+                    <div class="info-row">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                        <div>
+                            <h4>Phone</h4>
+                            <p><a href="tel:+14352594848">(435) 259-4848</a></p>
+                        </div>
+                    </div>
+                    <div class="info-row">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                        <div>
+                            <h4>Hours</h4>
+                            <p>Monday – Sunday · 7:00 AM – 10:00 PM</p>
+                        </div>
+                    </div>
+                    <div class="info-row">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                        <div>
+                            <h4>Follow Us</h4>
+                            <div class="social-links">
+                                <a href="https://www.facebook.com/profile.php?id=61584618687221" target="_blank" rel="noopener"><span class="social-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"/></svg></span><span class="social-label"><span>Facebook</span></span></a>
+                                <a href="https://www.instagram.com/moabgrill_restaurant/" target="_blank" rel="noopener"><span class="social-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/></svg></span><span class="social-label"><span>Instagram</span></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="map-frame reveal d1">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3119.619940650488!2d-109.55331732407231!3d38.56556946621529!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8747e1f3d8382903%3A0x69e4f09eb631715b!2s540%20S%20Main%20St%2C%20Moab%2C%20UT%2084532%2C%20EE.%20UU.!5e0!3m2!1ses-419!2smx!4v1763267041675!5m2!1ses-419!2smx"
+                        loading="lazy"
+                        allowfullscreen=""
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Map to Moab Grill, 540 S Main St, Moab, Utah">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <img src="IMG/logo1-cream.png" alt="Moab Grill logo">
+                <p>Hearty breakfasts, grill classics and warm western hospitality in the heart of Moab, Utah.</p>
+            </div>
+
+            <div>
+                <h4>Explore</h4>
+                <nav class="footer-nav" aria-label="Footer navigation">
+                    <a href="index.html">Home</a>
+                    <a href="menu.html">Browse Menu</a>
+                    <a href="index.html#contact">Contact Us</a>
+                </nav>
+            </div>
+
+            <div>
+                <h4>Follow Us</h4>
+                <div class="footer-socials social-links">
+                    <a href="https://www.facebook.com/profile.php?id=61584618687221" target="_blank" rel="noopener"><span class="social-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"/></svg></span><span class="social-label"><span>Facebook</span></span></a>
+                    <a href="https://www.instagram.com/moabgrill_restaurant/" target="_blank" rel="noopener"><span class="social-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/></svg></span><span class="social-label"><span>Instagram</span></span></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-copy">
+            <span>© 2025 Moab Grill — All rights reserved.</span>
+            <span>540 S Main St, Moab, UT 84532 · (435) 259-4848</span>
+        </div>
+    </footer>
 
 </body>
 </html>
