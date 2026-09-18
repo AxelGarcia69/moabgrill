@@ -579,7 +579,7 @@ body.nav-open .nav-toggle span::after{ transform:translateY(-8px) rotate(-45deg)
 
 .location-info{
   background:var(--card);
-  border:1px solid var(--line);
+  /* sin borde ni separadores: la diseñadora del usuario pidió quitar el contorno (17 sep 2026) */
   border-radius:calc(var(--radius) + 4px);
   padding:clamp(30px, 4vw, 48px);
   box-shadow:var(--shadow-sm);
@@ -595,7 +595,7 @@ body.nav-open .nav-toggle span::after{ transform:translateY(-8px) rotate(-45deg)
   align-items:flex-start;
   padding:16px 0;
 }
-.info-row + .info-row{ border-top:1px dashed var(--line); }
+.info-row + .info-row{ border-top:0; }
 .info-row svg{
   width:22px; height:22px;
   flex:none;
@@ -709,7 +709,6 @@ body.nav-open .nav-toggle span::after{ transform:translateY(-8px) rotate(-45deg)
   border-radius:calc(var(--radius) + 4px);
   overflow:hidden;
   box-shadow:var(--shadow-md);
-  border:1px solid var(--line);
   min-height:420px;
 }
 .map-frame iframe{
