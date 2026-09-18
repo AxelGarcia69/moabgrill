@@ -129,7 +129,7 @@ body.page{ padding-top:var(--header-h); }
   font-size:clamp(42px, 5.6vw, 72px);
   letter-spacing:.03em;
   text-transform:uppercase;
-  line-height:1;
+  line-height:.95;
   color:var(--cream);
   margin:14px 0 16px;
   text-wrap:balance;
@@ -565,6 +565,7 @@ body.nav-open .nav-toggle span::after{ transform:translateY(-8px) rotate(-45deg)
   color:var(--amber);
   margin-top:34px;
   text-align:center;
+  line-height:1.4;
 }
 
 /* Location ---------------------------------------------------------------- */
@@ -1075,7 +1076,7 @@ body.nav-open .nav-toggle span::after{ transform:translateY(-8px) rotate(-45deg)
   text-transform:uppercase;
   font-size:clamp(44px, 5.4vw, 68px);
   letter-spacing:.02em;
-  line-height:.9;
+  line-height:.95;
   color:transparent;
   -webkit-text-stroke:1.5px rgba(244,235,220,.3);
   transition:color .5s ease, transform .5s ease, -webkit-text-stroke-color .5s ease;
@@ -1114,6 +1115,7 @@ body.nav-open .nav-toggle span::after{ transform:translateY(-8px) rotate(-45deg)
   font-family:var(--font-slab);
   font-weight:700;
   color:var(--amber);
+  line-height:1.55;
 }
 .featured-item.active .featured-desc{
   grid-template-rows:1fr;
