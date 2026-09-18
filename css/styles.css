@@ -186,7 +186,7 @@ body.page{ padding-top:var(--header-h); }
   background:var(--amber);
   color:#241708;
 }
-.btn-light:hover{ background:#FFBC53; box-shadow:0 10px 30px rgba(242,169,59,.35); }
+.btn-light:hover{ background:#E39A2F; } /* sin aclarado ni resplandor al pasar el mouse (pedido del usuario) */
 
 /* --------------------------------------------------------------------------
    Header / Navigation
